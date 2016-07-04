@@ -10,8 +10,8 @@ install_apache() {
     echo "Installing Apache ..."
     sudo apt-get -qq install -y apache2 apache2-utils ssl-cert libexpat1
     echo "Replacing Apache configuration file ..."
-    sudo cp $repo/conf/apache2/ports.conf /etc/apache2/ports.conf
-    sudo cp $repo/conf/apache2/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+    sudo cp $repo/conf/apache/ports.conf /etc/apache2/ports.conf
+    sudo cp $repo/conf/apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf
     echo "Installing mod-wsgi ..."
     sudo apt-get -qq install -y libapache2-mod-wsgi
     echo "Restarting the Apache service ..."
