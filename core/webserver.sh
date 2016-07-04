@@ -8,10 +8,10 @@ install_nginx() {
 
 install_apache() {
     echo "Installing Apache ..."
-    sudo apt-get -qq install -y apache2 apache2.2-common apache2-mpm-prefork apache2-utils ssl-cert libexpat1
+    sudo apt-get -qq install -y apache2 apache2-utils ssl-cert libexpat1
     echo "Replacing Apache configuration file ..."
-    cp $repo/confs/apache2/ports.conf /etc/apache2/ports.conf
-    cp $repo/confs/apache2/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+    sudo cp $repo/confs/apache2/ports.conf /etc/apache2/ports.conf
+    sudo cp $repo/confs/apache2/000-default.conf /etc/apache2/sites-enabled/000-default.conf
     echo "Installing mod-wsgi ..."
     sudo apt-get -qq install -y libapache2-mod-wsgi
     echo "Restarting the Apache service ..."
