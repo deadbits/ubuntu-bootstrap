@@ -13,7 +13,7 @@ echo "Installing system packages ..."
 sudo apt-get -y update
 
 # basic packages
-sudo apt-get -qq install -y build-essential git zsh vim curl wget openssl gdb coreutils pkg-config make
+sudo apt-get -qq install -y build-essential git zsh zsh-syntax-highlighting vim curl wget openssl gdb coreutils pkg-config make
 
 # some dev libraries
 sudo apt-get -qq install -y libxml2-dev libxslt1-dev dpkg-dev autoconf libreadline-dev libdnet-dev libffi-dev libpcap-dev libtool libmagic-dev libfreetype6-dev
