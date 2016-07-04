@@ -92,7 +92,7 @@ geoip()
 COMPLETION_WAITING_DOTS="true"
 
 
-plugins=(pip python encode64 git history)
+plugins=(pip python encode64 git zsh-syntax-highlighting history)
 source $ZSH/oh-my-zsh.sh
 export TARGET_LANG=en
 PATH="/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin"
