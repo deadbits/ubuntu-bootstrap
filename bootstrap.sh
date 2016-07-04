@@ -14,10 +14,18 @@ sudo -v
 # sudo keepalive
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+echo "Ubuntu Boostrap (https://github.com/deadbits/ubuntu-bootstrap)"
+echo "***"
+echo " "
+
+sudo apt-get -qq install -y git
+git clone https://www.github.com/deadbits/ubuntu-bootstrap
+cd ubuntu-bootstrap
+
 clear
 
-declare work=$HOME/bootstrap-temp
-declare repo=$HOME/ubuntu-bootstrap
+work=$HOME/bootstrap-temp
+repo=`pwd`
 
 # install system packages and settings
 source $repo/core/system.sh
