@@ -2,13 +2,11 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="mh"
 
-alias pcat="pygmentize $@"
 alias gclone="git clone $@"
 
 # malware things
 alias subfile="hachoir-subfile $@"
 alias extmd="hachoir-metadata $@"
-alias getstatic="python /usr/local/sbin/getstatic.py"
 alias strings="strings -t x"
 
 alias pyserve="python -m SimpleHTTPServer"
@@ -94,7 +92,7 @@ geoip()
 COMPLETION_WAITING_DOTS="true"
 
 
-plugins=(pip python encode64 git zsh-syntax-highlighting history)
+plugins=(pip python encode64 git history)
 source $ZSH/oh-my-zsh.sh
 export TARGET_LANG=en
 PATH="/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin"
