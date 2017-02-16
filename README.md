@@ -1,3 +1,5 @@
+[![SayThanks](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg?style=flat)](https://saythanks.io/to/deadbits)  [![Donate](https://img.shields.io/badge/donate-BTC-blue.svg?style=flat)](https://www.coinbase.com/deadbits)
+
 # Ubuntu Bootstrap
 Bash script to automate the configuration and package installation for Ubuntu systems.
 
