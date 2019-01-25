@@ -21,7 +21,7 @@ echo " "
 sudo apt-get -qq install -y git
 git config --global credential.helper cache
 git clone https://www.github.com/john2c7/ubuntu-bootstrap
-cd ubuntu-bootstrap
+#cd ubuntu-bootstrap
 
 clear
 
@@ -31,11 +31,8 @@ repo=`pwd`
 # install system packages and settings
 source $repo/core/system.sh
 
-# install oh-my-zsh and dotfile
-#source $repo/core/omz.sh
-
-# install vim settings and colors
-#source $repo/core/vim.sh
+# install conf
+source $repo/core/conf.sh
 
 # install nginx and apache web servers
 #source $repo/core/webserver.sh
@@ -48,3 +45,6 @@ source $repo/core/system.sh
 
 # setup Github account
 #source $repo/core/github.sh
+echo "cleaning up ..."
+rm -rf ubuntu-bootstrap
+rm -rf conf 
