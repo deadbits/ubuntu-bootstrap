@@ -13,22 +13,22 @@ echo "Installing system packages ..."
 sudo apt-get -y update
 
 # basic packages
-sudo apt-get -qq install -y build-essential git zsh zsh-syntax-highlighting vim curl wget openssl gdb coreutils pkg-config make
+sudo apt-get -qq install -y build-essential git vim curl wget openssl gdb coreutils pkg-config make
 
 # some dev libraries
-sudo apt-get -qq install -y libxml2-dev libxslt1-dev dpkg-dev autoconf libreadline-dev libdnet-dev libffi-dev libpcap-dev libtool libmagic-dev libfreetype6-dev
+#sudo apt-get -qq install -y libxml2-dev libxslt1-dev dpkg-dev autoconf libreadline-dev libdnet-dev libffi-dev libpcap-dev libtool libmagic-dev libfreetype6-dev
 
 # databases
-sudo apt-get -qq install -y mongodb sqlite3 postgresl
+#sudo apt-get -qq install -y mongodb sqlite3 postgresl
 
 # useful tools
-sudo apt-get -qq install -y zip unzip upx unrar-free jq dnsutils tcpdump httpie
+#sudo apt-get -qq install -y zip unzip upx unrar-free jq dnsutils tcpdump httpie
 
 # cli session management
-sudo apt-get -qq install -y tmux byobu 
+sudo apt-get -qq install -y tmux 
 
 # security and privacy
-sudo apt-get -qq install -y tor torsocks tor-arm socat dnscrypt-proxy secure-delete dnssec-tools logcheck logcheck-database
+#sudo apt-get -qq install -y tor torsocks tor-arm socat dnscrypt-proxy secure-delete dnssec-tools logcheck logcheck-database
 
 
 if [[ $create_ssh == "y" || $create_ssh == "Y" || $create_ssh == "yes" ]]; then

@@ -14,7 +14,7 @@ sudo -v
 # sudo keepalive
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-echo "Ubuntu Boostrap (https://github.com/deadbits/ubuntu-bootstrap)"
+echo "Ubuntu Boostrap"
 echo "***"
 echo " "
 
@@ -31,19 +31,19 @@ repo=`pwd`
 source $repo/core/system.sh
 
 # install oh-my-zsh and dotfile
-source $repo/core/omz.sh
+#source $repo/core/omz.sh
 
 # install vim settings and colors
-source $repo/core/vim.sh
+#source $repo/core/vim.sh
 
 # install nginx and apache web servers
-source $repo/core/webserver.sh
+#source $repo/core/webserver.sh
 
 # install python and additional libraries
-source $repo/core/python.sh
+#source $repo/core/python.sh
 
 # install malware analysis tools
-source $repo/core/malware.sh
+#source $repo/core/malware.sh
 
 # setup Github account
-source $repo/core/github.sh
+#source $repo/core/github.sh
