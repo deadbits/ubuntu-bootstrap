@@ -19,7 +19,7 @@ echo "***"
 echo " "
 
 sudo apt-get -qq install -y git
-git clone https://www.github.com/deadbits/ubuntu-bootstrap
+git clone https://www.github.com/john2c7/ubuntu-bootstrap
 cd ubuntu-bootstrap
 
 clear
