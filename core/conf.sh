@@ -15,4 +15,7 @@ rm $HOME/.bash_profile
 rm -rf $HOME/.bashrc
 rm -rf $HOME/.bash_profile
 ln -s $HOME/.jc/src/conf/.bash_profile $HOME/.bash_profile
+ln -s $HOME/.jc/src/conf/.bashrc $HOME/.bashrc
+echo "sylink tmux"
+ln -s $HOME/.jc/src/conf/.conf $HOME/.tmux.conf
 source $HOME/.bashrc
